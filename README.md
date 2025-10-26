@@ -116,6 +116,3 @@ Both scripts use only the Python standard library.
 
 Uses the ENABLE word list which is in the public domain.
 See [https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt](https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt) for licensing and attribution.
-Uses the ENABLE word list which is in the public domain.
-See [https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt](https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt) for licensing and attribution.
-
