@@ -31,7 +31,7 @@ Use this to generate a smaller, valid word list — or to find inspiration when 
 **Example**
 
 ```bash
-python filter.py abc-def-ghi-jkl \
+python filter.py abc-def-gui-rst \
     --wordlist enable1.txt \
     -o valid_words.txt
 ```
@@ -39,11 +39,11 @@ python filter.py abc-def-ghi-jkl \
 **Example output (excerpt)**
 
 ```
-acacia
+afield
+beadle
+beagle
 flake
-hall
-jacob
-kick
+dice
 ```
 
 Output is saved to `_valid_word_list.txt` unless `-o` is specified.
@@ -64,7 +64,7 @@ This script is the solver, useful for confirming or discovering complete answers
 **Example**
 
 ```bash
-python filter_pairs.py abc-def-ghi-jkl \
+python filter_pairs.py abc-def-gui-rst \
     --wordlist valid_words.txt \
     --sort combined_len \
     -o pairs.txt
@@ -73,9 +73,8 @@ python filter_pairs.py abc-def-ghi-jkl \
 **Example output**
 
 ```
-flake echo
-kick cab
-jacob bridge
+gratifies subduces
+driftages scrub
 ```
 
 ---
@@ -115,6 +114,6 @@ Both scripts use only the Python standard library.
 
 ## License
 
-Public domain, using the ENABLE word list.
-See [https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt](https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt) for source attribution.
+Uses the ENABLE word list which is in the public domain.
+See [https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt](https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt) for licensing and attribution.
 
