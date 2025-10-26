@@ -32,6 +32,7 @@ Use this to generate a smaller, valid word list — or to find inspiration when 
 
 ```bash
 python filter.py abc-def-gui-rst \
+python filter.py abc-def-gui-rst \
     --wordlist enable1.txt \
     -o valid_words.txt
 ```
@@ -65,6 +66,7 @@ This script is the solver, useful for confirming or discovering complete answers
 
 ```bash
 python filter_pairs.py abc-def-gui-rst \
+python filter_pairs.py abc-def-gui-rst \
     --wordlist valid_words.txt \
     --sort combined_len \
     -o pairs.txt
@@ -73,6 +75,8 @@ python filter_pairs.py abc-def-gui-rst \
 **Example output**
 
 ```
+gratifies subduces
+driftages scrub
 gratifies subduces
 driftages scrub
 ```
@@ -114,6 +118,8 @@ Both scripts use only the Python standard library.
 
 ## License
 
+Uses the ENABLE word list which is in the public domain.
+See [https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt](https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt) for licensing and attribution.
 Uses the ENABLE word list which is in the public domain.
 See [https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt](https://raw.githubusercontent.com/dolph/dictionary/master/enable1.txt) for licensing and attribution.
 
