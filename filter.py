@@ -10,7 +10,7 @@ Rules enforced:
 
 Usage:
   python filter_letterboxed.py LETTERS \
-      --wordlist word_list.txt \
+      --wordlist enable1.txt \
       --min-length 3 \
       --sort length \
       -o valid_words.txt
@@ -79,8 +79,8 @@ def load_words(path: Path) -> Iterable[str]:
 def main() -> int:
     ap = argparse.ArgumentParser(description="Filter a word list for Letter Boxed validity using a regex.")
     ap.add_argument("letters", help="12 letters in sequence (3 per side). Non-letters ignored.")
-    ap.add_argument("--wordlist", type=Path, default=Path("word_list.txt"),
-                    help="Path to input word list (one word per line). Default: word_list.txt")
+    ap.add_argument("--wordlist", type=Path, default=Path("enable1.txt"),
+                    help="Path to input word list (one word per line). Default: enable1.txt")
     ap.add_argument("--min-length", type=int, default=3,
                     help="Minimum word length to keep. Default: 3")
     ap.add_argument("--sort", choices=["length", "alpha"], default="length",
